@@ -82,7 +82,7 @@ class handDetector():
         if draw:
             cv2.circle(image, (x1, y1), 12, (0, 200, 0), cv2.FILLED)  # Creates circle at x coordinates
             cv2.circle(image, (x2, y2), 12, (0, 200, 0), cv2.FILLED)  # Creates circle at y coordinates
-            cv2.line(image, (x1, y1), (x2, y2), (0, 200, 0), 2)  # creates a line from x to y
+            cv2.line(image, (x1, y1), (x2, y2), (255, 0, 255), 2)  # creates a line from x to y
             cv2.circle(image, (cx, cy), 9, (0, 200, 0), cv2.FILLED)  # creates a center point circle
 
         return length, image, [x1, y1, x2, y2, cx, cy]

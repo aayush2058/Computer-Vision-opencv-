@@ -80,7 +80,7 @@ while True:
                 xp, yp = x1, y1
 
             if drawColor == (0, 0, 0):
-                cv2.line(img, (xp, yp), (x1, y1), drawColor, eraserThickness)
+                cv2.line(img, (xp, yp), (x1, y1), (180, 180, 180), eraserThickness)
                 cv2.line(imgCanvas, (xp, yp), (x1, y1), drawColor, eraserThickness)
             else:
                 cv2.line(img, (xp, yp), (x1, y1), drawColor, brushThickness)
